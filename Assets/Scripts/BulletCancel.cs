@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Border : MonoBehaviour {
+public class BulletCancel : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D other)
 	{
 		GameObject objRef = other.gameObject;
@@ -14,18 +14,5 @@ public class Border : MonoBehaviour {
 		{
 			Destroy(objRef);
 		}
-		if(objRef.tag == "Enemy")
-		{
-			Destroy(objRef);
-		}
 	}
-
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		GameObject objRef = other.gameObject;
-		if (objRef.tag == "Enemy")
-		{
-			objRef.GetComponent<Pattern>().canFire = true;
-		}
-	}	
 }

@@ -2,31 +2,25 @@
 using System.Collections;
 
 public class Circle : Pattern {
-
-	public GameObject bulletPrefab;
-	public float fireRate;
-
-	// Use this for initialization
-	void Start () {
-		InvokeRepeating ("Fire", 0.5f, fireRate);
-	}
+	float count = 0;
 	
-	// Update is called once per frame
-	void Fire ()
-	{
-		for (int i = 0; i < 360; i += 15) {
-			GameObject bullet = ObjectPool.current.GetPooledObject();
-			//GameObject bullet = (GameObject)Instantiate(bulletPrefab, transform.position, transform.rotation);
+	void Start () {
 
-			bullet.transform.position = transform.position;
-			bullet.transform.rotation = transform.rotation;
-			bullet.SetActive(true);
+	}
 
-			Object compBullet = bullet.GetComponent<Object> ();
-				
-			compBullet.angle = i;
-			compBullet.speed = 2;
-			numBullets++;
+	void Update() {
+		float i = 0;
+		if(count >= 0.5 && canFire)
+		{
+			while(i < 360)
+			{
+				BulletPool.current.EnableBullet(transform.position, i, 1f, 4);
+				numBullets++;
+				i += 30f;
+			}
+			count = 0;
 		}
+
+		count += Time.deltaTime;
 	}
 }

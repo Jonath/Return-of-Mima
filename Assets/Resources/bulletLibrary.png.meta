@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 0eb271a377f450640b1fadd0b9f53253
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bulletLibrary
+    21300002: bulletLibrary_0
+    21300004: bulletLibrary_1
+    21300006: bulletLibrary_2
+    21300008: bulletLibrary_3
+    21300010: bulletLibrary_4
+    21300012: bulletLibrary_5
+    21300014: bulletLibrary_6
+    21300016: bulletLibrary_7
+    21300018: bulletLibrary_8
+    21300020: bulletLibrary_9
+    21300022: bulletLibrary_10
+    21300024: bulletLibrary_11
+    21300026: bulletLibrary_12
+    21300028: bulletLibrary_13
+    21300030: bulletLibrary_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bulletLibrary_0
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_1
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_2
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_3
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_4
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_5
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_6
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_7
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_8
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_9
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_10
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_11
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_12
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_13
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_14
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 754
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

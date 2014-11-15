@@ -6,26 +6,29 @@ public class Enemy : MonoBehaviour {
 	public List<Movement> movements;	// List of Movements to update
 
 	private int index;					// Index to get the current movement
-	private int elapsed;				// Elapsed frames since the begining of the movement
+	private float elapsed;				// Elapsed frames since the begining of the movement
 
-	private float direction;			// The direction the enemy is facing,
+	public float direction;				// The direction the enemy is facing,
 										// i.e. 1 for right, -1 for left, 0 for middle
 
-	private bool moving;
+	public bool moving;
 
 	Animator anim;
-	Object obj;
+	Updater obj;
 
 	void Start ()
 	{
-		anim = GetComponent<Animator>();
+		anim = gameObject.GetComponent<Animator>();
+		obj = gameObject.GetComponent<Updater>();
+
 		direction = 0.0f;
 		moving = false;
+
+		ChangeMovement();
 	}
 	
 	void Update()
 	{
-		Debug.Log (direction);
 		anim.SetFloat ("direction", direction);
 		anim.SetBool ("moving", moving);
 
@@ -35,23 +38,20 @@ public class Enemy : MonoBehaviour {
 			if(elapsed > movements[index].time)
 			{
 				index = (index + 1) % movements.Count;
+				ChangeMovement();
+
 				elapsed = 0;
 			}
 
-			// Get the behavior to set for the Object component
-			if(movements[index].type == "wait")
-			{
-				obj.angle = 0;
-				obj.speed = 0;
-				elapsed++;
-			}
-			else
-			{
-				obj.angle = movements[index].angle;
-				obj.speed = movements[index].speed;
-				elapsed++;
-			}
+			elapsed += Time.deltaTime;
 		}
+	}
+
+	private void ChangeMovement()
+	{
+		obj.angle = movements[index].angle;
+		obj.speed = movements[index].speed;
+		obj.Change ();
 	}
 
 	public void FixedUpdate()

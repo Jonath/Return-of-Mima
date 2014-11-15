@@ -4,21 +4,28 @@ using System.Collections;
 public class Spawn : MonoBehaviour {
 	public GameObject weakEnemy;
 	public Vector3 spawnValues;
+	
+	float count = 0.0f;
+	int num = 0;
 
-	void Start()
+	void Update()
 	{
-		StartCoroutine (SpawnWaves ());
+		SpawnBlueFairies ();
 	}
 
-	IEnumerator SpawnWaves ()
+	void SpawnBlueFairies()
 	{
-		yield return new WaitForSeconds (1);
-		for (int i = 0; i < 5; i++)
+		if(num < 5)
 		{
-			Vector3 spawnPosition = new Vector3(spawnValues.x, spawnValues.y, spawnValues.z);
-			Quaternion spawnRotation = Quaternion.identity;
-			Instantiate (weakEnemy, spawnPosition, spawnRotation);
-			yield return new WaitForSeconds(0.5f);
+			if(count > 0.5f)
+			{
+				Vector3 spawnPosition = new Vector3(spawnValues.x, spawnValues.y, spawnValues.z);
+				Quaternion spawnRotation = Quaternion.identity;
+				Instantiate (weakEnemy, spawnPosition, spawnRotation);
+
+				count = 0.0f;
+			}
 		}
+		count += Time.deltaTime;
 	}
 }
