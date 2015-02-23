@@ -1,0 +1,55 @@
+Initialize engine version: 4.5.2f1 (9abb1b59b47c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     64 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Jonath Kane\Desktop\Project Mima\Mima_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Jonath Kane\Desktop\Project Mima\Mima_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonath Kane\Desktop\Project Mima\Mima_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Jonath Kane\Desktop\Project Mima\Mima_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.055 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/Camera/Camera.cpp Line: 2503)
+
+PlayerConnection accepted from [192.168.1.19] handle:0x314
+Profiler is only supported with Pro License
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
+
+Platform assembly: C:\Users\Jonath Kane\Desktop\Project Mima\Mima_Data\Managed\System.dll (this message is harmless)
+Power item
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Gather:OnTriggerEnter2D(Collider2D) (at C:\Users\Jonath Kane\Desktop\Project Mima\Assets\Scripts\Gather.cs:18)
+ 
+(Filename: C Line: 0)
+
+Point item
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Gather:OnTriggerEnter2D(Collider2D) (at C:\Users\Jonath Kane\Desktop\Project Mima\Assets\Scripts\Gather.cs:13)
+ 
+(Filename: C Line: 0)
+
+Power item
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Gather:OnTriggerEnter2D(Collider2D) (at C:\Users\Jonath Kane\Desktop\Project Mima\Assets\Scripts\Gather.cs:18)
+ 
+(Filename: C Line: 0)
+
+Point item
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Gather:OnTriggerEnter2D(Collider2D) (at C:\Users\Jonath Kane\Desktop\Project Mima\Assets\Scripts\Gather.cs:13)
+ 
+(Filename: C Line: 0)
+
+Waiting for finish

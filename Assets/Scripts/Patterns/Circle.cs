@@ -1,26 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Timers; 
 
 public class Circle : Pattern {
-	float count = 0;
-	
-	void Start () {
-
-	}
-
-	void Update() {
+	void FixedUpdate() {
 		float i = 0;
-		if(count >= 0.5 && canFire)
+/*		if(count > 0.4f && canFire)
 		{
 			while(i < 360)
 			{
-				BulletPool.current.EnableBullet(transform.position, i, 1f, 4);
+				GameObject bullet = BulletPool.current.EnableBullet(transform.position, i, 1f, 0, 4f, 4);
+                bullet.GetComponent<Updater>().Angular_Velocity = 0.2f;
+
+               // StartCoroutine(Utilities.WaitAndChange(bullet, 1f, i, 2f));
+
 				numBullets++;
-				i += 30f;
+				i += 15f;
 			}
+			i = 0;
 			count = 0;
 		}
 
-		count += Time.deltaTime;
+		base.FixedUpdate ();*/
 	}
 }

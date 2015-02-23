@@ -2,9 +2,7 @@
 using System.Collections;
 
 public class Health : MonoBehaviour {
-
 	public int hp = 1;
-	public bool isEnemy = true;
 
 	public void Damage(int damageCount)
 	{
@@ -12,7 +10,7 @@ public class Health : MonoBehaviour {
 		
 		if (hp <= 0)
 		{
-			Destroy(gameObject);
+            Destroy(gameObject);
 		}
 	}
 	
@@ -21,11 +19,8 @@ public class Health : MonoBehaviour {
 		Shot shot = otherCollider.gameObject.GetComponent<Shot>();
 		if (shot != null)
 		{
-			if (shot.isEnemyShot != isEnemy)
-			{
-				Damage(shot.damage);
-				Destroy(shot.gameObject);
-			}
+			Damage(shot.damage);
+			Destroy(shot.gameObject);
 		}
 	}
 }

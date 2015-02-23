@@ -2,11 +2,13 @@
 using System.Collections;
 
 public class Fire : MonoBehaviour {
+    public delegate void Delegate(GameObject obj, Transform prefab);
 
-	public float offset;
 	public Transform shotPrefab;
-	public float shootingRate = 0.05f;
+	public float shootingRate = 0.02f;
+
 	private float shootCooldown;
+    private Delegate shotDelegate;
 
 	public bool CanAttack
 	{
@@ -15,6 +17,14 @@ public class Fire : MonoBehaviour {
 			return shootCooldown <= 0f;
 		}
 	}
+
+    public Delegate ShotDelegate
+    {
+        set
+        {
+            shotDelegate = value;
+        }
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -29,32 +39,15 @@ public class Fire : MonoBehaviour {
 		}
 	}
 
-	public void Attack(bool isEnemy)
+	public void Attack()
 	{
 		if (CanAttack)
 		{
 			shootCooldown = shootingRate;
-			
-			// Create new shots
-			var shotTransform1 = Instantiate(shotPrefab) as Transform;
-			var shotTransform2 = Instantiate(shotPrefab) as Transform;
-			
-			// Assign position
-			shotTransform1.position = transform.position + new Vector3(offset, 0, 0);
-			shotTransform2.position = transform.position - new Vector3(offset, 0, 0);
-			
-			// The is enemy property
-			Shot shot1 = shotTransform1.gameObject.GetComponent<Shot>();
-			if (shot1 != null)
-			{
-				shot1.isEnemyShot = isEnemy;
-			}
 
-			Shot shot2 = shotTransform1.gameObject.GetComponent<Shot>();
-			if (shot2 != null)
-			{
-				shot2.isEnemyShot = isEnemy;
-			}
+			if(shotDelegate != null) {
+                shotDelegate(gameObject, shotPrefab);
+            }
 		}
 	}
 }
