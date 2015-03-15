@@ -18,6 +18,15 @@ TextureImporter:
     21300026: bulletLibrary_12
     21300028: bulletLibrary_13
     21300030: bulletLibrary_14
+    21300032: bubble_01
+    21300034: bubble_02
+    21300036: bubble_03
+    21300038: bubble_04
+    21300040: bubble_05
+    21300042: bubble_06
+    21300044: bubble_07
+    21300046: bubble_08
+    21300048: bulletLibrary_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -206,6 +215,96 @@ TextureImporter:
         y: 754
         width: 13
         height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bubble_01
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bubble_02
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bubble_03
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bubble_04
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bubble_05
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bubble_06
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bubble_07
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bubble_08
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bulletLibrary_15
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 547
+        width: 148
+        height: 39
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

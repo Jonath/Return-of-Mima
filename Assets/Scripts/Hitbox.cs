@@ -22,7 +22,6 @@ public class Hitbox : MonoBehaviour {
             player.fullLives--;
             player.Dead = true;
             StartCoroutine(DeathCircle());
-            // Destroy(gameObject.transform.parent.gameObject);
         }
     }
 

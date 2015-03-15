@@ -40,17 +40,18 @@ public class Updater : MonoBehaviour {
         set { max_speed = Mathf.Max(0, value); }
     }
 
-	public void FixedUpdate() {
-		count += Time.fixedDeltaTime;
-
+    public void Update() {
         speed = Mathf.Min(speed + acc, max_speed);
         angle = (angle + ang_vec) % 360;
 
-        movement = Quaternion.Euler(0, 0, angle) * -Vector2.right * speed * 60 * Time.deltaTime;
+        float radAngle = angle * Mathf.Deg2Rad;
+        movement = new Vector2(speed * Mathf.Cos(radAngle), speed * Mathf.Sin(radAngle));
+    }
 
-		rigidbody2D.velocity = movement;
+	public void FixedUpdate() {
+        rigidbody2D.velocity = movement * Time.deltaTime * 60;
 
         if(gameObject.tag == "Bullet" || gameObject.tag == "BouncingBullet")
-            transform.localRotation = Quaternion.Euler(0, 0, angle + 90);
+            transform.localRotation = Quaternion.Euler(0, 0, angle - 90);
 	}
 }

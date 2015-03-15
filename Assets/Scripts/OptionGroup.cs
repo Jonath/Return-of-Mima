@@ -3,19 +3,21 @@ using System.Collections;
 
 public class OptionGroup : MonoBehaviour {
     public float powerLevel;
-    private bool active;
+    private bool act;
 
 	void Update () {
         float power = Player.current.power;
 
-        if (power > powerLevel && power < powerLevel + 1)
-            active = true;
-        else
-            active = false;
+        if (power >= powerLevel && power < powerLevel + 1) {
+            act = true;
+        }
+        else {
+            act = false;
+        }
 
-        SetChildrenActivation(active);
+        SetChildrenActivation(act);
 
-        if (active && Player.current.Shoot)
+        if (act && Player.current.Shoot)
         {
             foreach (Transform child in transform)
             {

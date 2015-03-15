@@ -1,0 +1,11 @@
+C:\Users\Jonath Kane\Desktop\Project Mima\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\Users\Jonath Kane\Desktop\Project Mima\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\Users\Jonath Kane\Desktop\Project Mima\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\Jonath Kane\Desktop\Project Mima\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\Jonath Kane\Desktop\Project Mima\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\Users\Jonath Kane\Desktop\Project Mima\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\Jonath Kane\Desktop\Project Mima\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\Jonath Kane\Desktop\Project Mima\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\Users\Jonath Kane\Desktop\Project Mima\obj\Debug\UnityVS.Project Mima.CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Jonath Kane\Desktop\Project Mima\obj\Debug\Assembly-CSharp.dll
+C:\Users\Jonath Kane\Desktop\Project Mima\obj\Debug\Assembly-CSharp.pdb

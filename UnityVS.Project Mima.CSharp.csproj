@@ -54,12 +54,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Editors\RenderEditor.cs" />
     <Compile Include="Assets\Scripts\Behaviour\ActivateAfter.cs" />
     <Compile Include="Assets\Scripts\Behaviour\ChangeAfter.cs" />
     <Compile Include="Assets\Scripts\Border.cs" />
     <Compile Include="Assets\Scripts\BulletPool.cs" />
     <Compile Include="Assets\Scripts\Difficulty.cs" />
     <Compile Include="Assets\Scripts\Enemies\Fairy01.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Fairy02.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Fairy03.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Fairy04.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Fire.cs" />
     <Compile Include="Assets\Scripts\GUI\GrazeText.cs" />
@@ -75,11 +79,7 @@
     <Compile Include="Assets\Scripts\Option.cs" />
     <Compile Include="Assets\Scripts\OptionGroup.cs" />
     <Compile Include="Assets\Scripts\Pattern.cs" />
-    <Compile Include="Assets\Scripts\Patterns\Circle.cs" />
-    <Compile Include="Assets\Scripts\Patterns\Drop.cs" />
-    <Compile Include="Assets\Scripts\Patterns\Homing.cs" />
     <Compile Include="Assets\Scripts\Patterns\Laser.cs" />
-    <Compile Include="Assets\Scripts\Patterns\Triangle.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerBombs.cs" />
     <Compile Include="Assets\Scripts\PlayerLives.cs" />
@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\System\AudioManager.cs" />
     <Compile Include="Assets\Scripts\System\Effects.cs" />
     <Compile Include="Assets\Scripts\System\Patterns.cs" />
+    <Compile Include="Assets\Scripts\System\ReimuPatterns.cs" />
     <Compile Include="Assets\Scripts\System\Utilities.cs" />
     <Compile Include="Assets\Scripts\Updater.cs" />
   </ItemGroup>

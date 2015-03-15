@@ -26,7 +26,7 @@ public class Laser : Pattern
     }
 
     // Big fat method of doom to call a CurvyLaser !
-    void CurvyLaser(float x, float y, float spd, float ang,
+   /* void CurvyLaser(float x, float y, float spd, float ang,
                       float acc, float ang_vec, float max_spd,
                       int segments, float seg_rate, int id, int delay)
     {
@@ -78,7 +78,7 @@ public class Laser : Pattern
         }
 
         if (parent.activeSelf) { parent.SetActive(false); }
-    }
+    }*/
 
     IEnumerator TMoveTrail(GameObject tip, GameObject parent, int time, int id,
                           float sca, float col, float laser_time)

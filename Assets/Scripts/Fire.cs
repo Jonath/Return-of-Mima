@@ -4,11 +4,21 @@ using System.Collections;
 public class Fire : MonoBehaviour {
     public delegate void Delegate(GameObject obj, Transform prefab);
 
-	public Transform shotPrefab;
-	public float shootingRate = 0.02f;
+	private Transform shotPrefab;
+	private int shootingRate = 5;
 
 	private float shootCooldown;
     private Delegate shotDelegate;
+
+    public Transform ShotPrefab
+    {
+        set { shotPrefab = value; }
+    }
+
+    public int ShootingRate
+    {
+        set { shootingRate = value; }
+    }
 
 	public bool CanAttack
 	{
@@ -35,7 +45,7 @@ public class Fire : MonoBehaviour {
 	void Update () {
 		if (shootCooldown > 0)
 		{
-			shootCooldown -= Time.deltaTime;
+			shootCooldown --;
 		}
 	}
 

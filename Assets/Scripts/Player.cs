@@ -15,8 +15,11 @@ public class Player : MonoBehaviour {
     public int      fullBombs = 2;
     public int      fractBombs = 0;
 
-	public float    speed;
+	public float    normalSpeed;
+    public float    focusSpeed;
     public float    power;
+
+    public Transform shotPrefab;
 
     private float   graze = 0;
     private bool    dead = false;
@@ -26,7 +29,7 @@ public class Player : MonoBehaviour {
     public GameObject optionPrefab;
 
 	private Vector2 movement;
-    private List<GameObject> activeOptions;
+    private bool focus = false;
 
     public float Graze {
         get { return graze; }
@@ -43,6 +46,10 @@ public class Player : MonoBehaviour {
         set { shoot = value; }
     }
 
+    public bool Focus {
+        get { return focus; }
+    }
+
 	Animator anim;
 
 	void Awake ()
@@ -57,14 +64,18 @@ public class Player : MonoBehaviour {
         // Adding the main shot !
         Fire fire = gameObject.GetComponent<Fire>();
 
-        if(fire != null)
-            fire.ShotDelegate = Patterns.MainReimuShot;
+        if(fire != null) {
+            fire.ShotDelegate = ReimuPatterns.MainReimuShot;
+            fire.ShotPrefab = shotPrefab;
+            fire.ShootingRate = 30;
+        }
 	}
 
 	void Update ()
 	{
 		movement.x = Input.GetAxis ("Horizontal");
 		movement.y = Input.GetAxis ("Vertical");
+        focus = Input.GetKey(KeyCode.LeftShift);
 		
 		anim.SetFloat ("speed", movement.x);
 		
@@ -102,7 +113,12 @@ public class Player : MonoBehaviour {
 	// Fixed update
 	void FixedUpdate ()
 	{
-		rigidbody2D.velocity = movement * speed;
+        if(focus) {
+            rigidbody2D.velocity = movement * focusSpeed;
+        } else {
+            rigidbody2D.velocity = movement * normalSpeed;
+        }
+
 		rigidbody2D.position = new Vector2 (
 			Mathf.Clamp(rigidbody2D.position.x, boundary.xMin, boundary.xMax),
 			Mathf.Clamp(rigidbody2D.position.y, boundary.yMin, boundary.yMax)
